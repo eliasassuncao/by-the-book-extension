@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "Calc 'by the book'",
+  "description": "Extensão para calcular sua sprint.",
+  "author": "Elias Assunção",
+  "browser_action": {
+    "default_title": "Calc 'by the book'",
+    "default_icon": "by_the_book.PNG"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://trello.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
